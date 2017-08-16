@@ -1,11 +1,17 @@
 .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      color: #303633;
+      color: #3E596A;
+}
+body {
+    background-color: #59423A;
 }
 footer {
       background-color: #7ea2aa;
       padding: 25px;
+}
+h1{
+    color:#EEDEC7;
 }
 .image {
   display: block, center;
