@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 
@@ -35,23 +36,63 @@
     </div>
     </div>
   </nav>
+    
+<!-- Slideshow -->
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="dating.png" style="width:100%">
+  <img class="mySlides" src="period.png" style="width:100%">
+  <img class="mySlides" src="fa3fb225dac61eb5723ce8f849144c04.jpg" style="width:100%">
+  <img class="mySlides" src="Makeup-Fashion-Backstage.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+    
+<!-- Slideshow Javascript -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 
 <!-- Row of first 3 categories -->
   <div class="container-fluid bg-4 text-center">
   <h1>Topics</h1><br>
     <div class="row">
       <div class="col-sm-4">
-        <a href="communications.html">
-        <img class="image" src="fa3fb225dac61eb5723ce8f849144c04.jpg" class="img-responsive" style="width:100%" alt="Image">
-        <div class="overlay image"></a>
-        <div class="text">Communication</div>
-        </div>
+        <a href="communications.html"><img class="image" src="fa3fb225dac61eb5723ce8f849144c04.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <div class="overlay image">
+                <div class="text">Communication</div>
+            </div>
+          </a>
       </div>
       <div class="col-sm-4">
-        <a href="hair.html"><img src="Makeup-Fashion-Backstage.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+         <a href="hair.html"><img class="image" src="Makeup-Fashion-Backstage.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <div class="overlay image">
+                <div class="text">Hair/Makeup</div>
+            </div>
+          </a>
       </div>
       <div class="col-sm-4">
-        <a href="puberty.html"><img src="puberty.png" class="img-responsive" style="width:100%" alt="Image"></a>
+         <a href="puberty.html"><img class="image" src="puberty.png" class="img-responsive" style="width:100%" alt="Image">
+            <div class="overlay image">
+                <div class="text">Puberty</div>
+            </div>
+          </a>
       </div>
     </div>
   </div><br>
@@ -60,20 +101,32 @@
   <div class="container-fluid bg-4 text-center">
     <div class="row">
       <div class="col-sm-4">
-        <a href="friends.html"><img src="friends.png" class="img-responsive" style="width:100%" alt="Image"></a>
+         <a href="friends.html"><img class="image" src="friends.png" class="img-responsive" style="width:100%" alt="Image">
+            <div class="overlay image">
+                <div class="text">Friends</div>
+            </div>
+          </a>
       </div>
       <div class="col-sm-4">
-        <a href="periods.html"><img src="period.png" class="img-responsive" style="width:100%" alt="Image"></a>
+         <a href="periods.html"><img class="image" src="period.png" class="img-responsive" style="width:100%" alt="Image">
+            <div class="overlay image">
+                <div class="text">Periods</div>
+            </div>
+          </a>
       </div>
       <div class="col-sm-4">
-        <a href="dating.html"><img src="dating.png" class="img-responsive" style="width:100%" alt="Image"></a>
+         <a href="dating.html"><img class="image" src="dating.png" class="img-responsive" style="width:100%" alt="Image">
+            <div class="overlay image">
+                <div class="text">Dating</div>
+            </div>
+          </a>
       </div>
     </div>
   </div><br><br>
 
 <!-- About me section -->
   <footer class="container-fluid text-center">
-    <h1>About the Creators:</h1>
+    <h1>The Creators</h1>
     <br>
 
     <div class ="container-fluid text-center">
@@ -82,28 +135,28 @@
         <div class="col-sm-3">
                 <img class="img-circle image" src="aastha.jpg" alt="Avatar">
                 <div class="img-circle overlay image">
-                    <div class="text">Hi, my name is Aastha</div>
+                    <div class="text image">Hi, I’m <b>Aastha Gupta</b> and I’m a rising senior at Shrewsbury High School!</div>
                 </div>
         </div>
 
         <div class="col-sm-3">
                 <img class="img-circle image" src="aastha.jpg" alt="Avatar">
                 <div class="img-circle overlay image">
-                    <div class="text image">Hi, my name is Iris</div>
+                    <div class="text image">Hi, I’m <b>Iris Su</b>, and I’m a rising junior at Newton North High School!</div>
                 </div>
         </div>
 
         <div class="col-sm-3">
                 <img class="img-circle image" src="aastha.jpg" alt="Avatar">
                 <div class="img-circle overlay image">
-                    <div class="text image">Hi, my name is Jaleigha</div>
+                    <div class="text image">Hi, I’m <b>Jaleigha Williams</b> and I’m a rising junior at Milton High School!</div>
                 </div>
         </div>
 
         <div class="col-sm-3">
                 <img class="img-circle image" src="aastha.jpg" alt="Avatar">
                 <div class="img-circle overlay image">
-                    <div class="text image">Hi, my name is Serena</div>
+                    <div class="text image"> Hi, I’m <b>Serena Tzeng </b>and I’m a rising junior at Westborough High School!</div>
                 </div>
         </div>
 
