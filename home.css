@@ -1,9 +1,11 @@
 .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      color: #000000;
+      color: #EEDEC7;
       background-color: #000000;
-      font-family: 'Lato';
+      font-family: 'Poiret One', cursive;
+      font-weight: bolder;
+      font-size:125%;
 }
 body {
     background-color: #01ABAA;
@@ -16,7 +18,9 @@ footer {
 }
 h1{
     color:#EEDEC7;
-    font-family: 'Lato';
+    font-family:'Poiret One', cursive;
+    font-size: 72px;
+    font-weight: bolder;
 }
 .image {
   display: block, center;
@@ -63,4 +67,8 @@ h1{
 }
 .col-sm-4:hover .overlay {
   opacity: 0.9;
+}
+
+.backgroundcolorslideshow {
+    background-color:  #FEDC3D;
 }
