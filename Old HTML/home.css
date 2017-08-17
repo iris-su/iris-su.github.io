@@ -1,14 +1,13 @@
 .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      color: #000000;
-      background-color: #000000;
+      color: #3E596A;
 }
 body {
-    background-color: #4EC5C1;
+    background-color: #59423A;
 }
 footer {
-      background-color: #000000;
+      background-color: #7ea2aa;
       padding: 25px;
 }
 h1{
