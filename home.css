@@ -72,3 +72,9 @@ h1{
 .backgroundcolorslideshow {
     background-color: #EDDBCD;
 }
+.yellowfont {
+    color:black;
+    font-family:'Poiret One', cursive;
+    font-size: 72px;
+    font-weight: bolder;
+}
