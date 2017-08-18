@@ -1,0 +1,24 @@
+div.text {
+  padding-top: 50px;
+  padding-right: 200px;
+  padding-bottom: 50px;
+  padding-left: 200px;
+  font-size: 150%;
+  font-family: 'Lato';
+}
+h1 {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+hr {
+  border-color: #123455;
+}
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      color: #EEDEC7;
+      background-color: #000000;
+      font-family: 'Poiret One', cursive;
+      font-weight: bolder;
+      font-size:125%;
+}
