@@ -8,16 +8,16 @@
       font-size:125%;
 }
 body {
-    background-color:#FF3B3F;
+    background-color:#EAC67A;
     font-family: 'Lato';
 }
 footer {
-      background-color: #A9A9A9;
+      background-color: #000000;
       padding: 25px;
       font-family: 'Lato';
 }
 h1{
-    color:#01ABAA;
+    color:#CDCDCD;
     font-family:'Poiret One', cursive;
     font-size: 72px;
     font-weight: bolder;
@@ -70,5 +70,5 @@ h1{
 }
 
 .backgroundcolorslideshow {
-    background-color: #01ABAA;
+    background-color: #EDDBCD;
 }
