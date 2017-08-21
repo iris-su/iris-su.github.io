@@ -1,11 +1,11 @@
 .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      color: #EEDEC7;
-      background-color: #000000;
-      font-family: 'Poiret One', cursive;
-      font-weight: bolder;
-      font-size:125%;
+    margin-bottom: 0;
+    border-radius: 0;
+    color: #EEDEC7;
+    background-color: #000000;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    font-size:125%;
 }
 div.text {
   padding-top: 50px;
@@ -46,4 +46,8 @@ h4 {
 }
 .center{
     align:middle;
+}
+h5 {
+    font-size: 100%;
+    font-weight: bold;
 }
