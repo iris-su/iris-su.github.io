@@ -43,39 +43,45 @@
 <div class="backgroundcolorslideshow">
 <br><br>
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="logopic.png" style="width:100%">
-  <img class="mySlides" src="dadpic1.jpg" style="width:100%">
-  <img class="mySlides" src="dadpic2.jpg" style="width:100%">
-  <img class="mySlides" src="iris._fam.jpg" style="width:100%">
-  <img class="mySlides" src="lieghadamily.jpg" style="width:100%">
-  <img class="mySlides" src="  " style="width:100%">
-    
-    
+  <img class="mySlides" src="dad1.jpg" style="width:100%">
+  <img class="mySlides" src="dad2.jpg" style="width:100%">
+  <img class="mySlides" src="dad3.jpg" style="width:100%">
+  <img class="mySlides" src="dad4.jpg" style="width:100%">
+  <img class="mySlides" src="dad8.jpg" style="width:100%">
+  <img class="mySlides" src="dad6.jpg" style="width:100%">
+  <img class="mySlides" src="dad10.jpg" style="width:100%">
+  <img class="mySlides" src="dad9.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
 <br><br>
 </div>
 <!-- Slideshow Javascript -->
 <script>
-var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
 }
 </script>
 
 <!-- Row of first 3 categories -->
   <div class="container-fluid bg-4 text-center">
 
-  <div><br><h1 class = "yellowfont">TOPICS</h1><br></div>
+  <br><h1>TOPICS</h1><br>
     <div class="row">
       <div class="col-sm-4">
         <a href="communications.html"><img class="image" src="communication.jpg" class="img-responsive" style="width:100%" alt="Image">
@@ -130,8 +136,9 @@ function showSlides() {
 
 <!-- About me section -->
   <footer class="container-fluid text-center">
-    <a href="aboutus.html"><h1>MEET THE CREATORS</h1></a>
+    <h1>MEET THE CREATORS</h1>
     <br>
+
     <div class ="container-fluid text-center">
       <div class="row">
 
@@ -150,7 +157,7 @@ function showSlides() {
         </div>
 
         <div class="col-sm-3">
-                <img class="img-circle image" src="jj.jpg" alt="Avatar">
+                <img class="img-circle image" src="aastha.jpg" alt="Avatar">
                 <div class="img-circle overlay image">
                     <div class="text image">Hi, I’m <b>Jaleigha Williams</b> and I’m a rising junior at Milton High School!</div>
                 </div>
